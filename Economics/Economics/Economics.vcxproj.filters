@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\finance">
+      <UniqueIdentifier>{6644e74a-9c75-4d55-a3c3-c6993f59c7b4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="finance\all_cc_progs\fin_recipes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="finance\all_cc_progs\term_structure_class.h">
+      <Filter>Source Files\finance</Filter>
+    </ClInclude>
+    <ClInclude Include="finance\all_cc_progs\term_structure_class_flat.h">
+      <Filter>Source Files\finance</Filter>
+    </ClInclude>
+    <ClInclude Include="finance\all_cc_progs\term_structure_class_interpolated.h">
+      <Filter>Source Files\finance</Filter>
+    </ClInclude>
+    <ClInclude Include="finance\all_cc_progs\term_structure_class_svensson.h">
+      <Filter>Source Files\finance</Filter>
+    </ClInclude>
+    <ClInclude Include="finance\all_cc_progs\normdist.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Economics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\futures_price.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\anal_price_am_call_div.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\approx_am_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\approx_am_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\approx_am_put_geske_johnson.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\approx_am_put_johnson.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bermudan_call_option.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bermudan_put_option.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_call_payout.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_delta_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_delta_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_div_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_div_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_partials_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_partials_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_prop_div_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_prop_div_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_am_put_payout.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_eur_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_eur_call_ud.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_eur_call_ud_one.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bin_eur_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\binomial_generic.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\binomial_generic_delta.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\binomial_tree_ud.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_call_div.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_delta_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_delta_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_imp_vol_bisect.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_imp_vol_newt.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_partials_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_partials_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_price_payout_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_price_payout_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\black_scholes_put_div.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bondopt_call_binom_am.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bondopt_call_bs.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bondopt_call_coupon_bs.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bondopt_call_rend_bart.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bondopt_call_vasicek.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bondopt_put_binom_am.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bondopt_put_bs.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bondopt_put_coupon_bs.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bondopt_put_vasicek.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_convexity.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_convexity_discrete.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_convexity_termstru.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_duration.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_duration_discrete.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_duration_macaulay.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_duration_macaulay_discrete.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_duration_modified.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_duration_termstru.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_price.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_price_both.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_price_discrete.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_price_termstru.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_yield.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\bonds_yield_discrete.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\cflow_irr.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\cflow_irr_discrete.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\cflow_irr_test_unique.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\cflow_pv.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\cflow_pv_discrete.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\cum_normal.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\cum_normal_bivariate.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\currency_opt_bin_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\currency_opt_bin_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\currency_opt_euro_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\currency_opt_euro_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\exotics_asian_price_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\exotics_lookback_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\exotics_lookback_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\findiff_exp_am_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\findiff_exp_am_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\findiff_exp_eur_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\findiff_exp_eur_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\findiff_imp_am_call_newmat.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\findiff_imp_am_put_itpp.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\findiff_imp_am_put_newmat.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\findiff_imp_eur_call_newmat.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\findiff_imp_eur_put_newmat.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\futures_opt_call_bin.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\futures_opt_call_black.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\futures_opt_put_bin.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\futures_opt_put_black.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\heston_price.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\interest_rate_trees_gbm_build.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\interest_rate_trees_gbm_calculate_spot_rate.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\interest_rate_trees_gbm_value_of_callable.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\interest_rate_trees_gbm_value_of_cashflows.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\merton_jump_diff_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\mv_calc_itpp.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\mv_calc_newmat.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\mv_calc_port_unconstrained_itpp.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\mv_calc_port_unconstrained_newmat.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\N3.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\normdist.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\opt_price_trinom_am_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\opt_price_trinom_am_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\option_price_american_perpetual_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\option_price_american_perpetual_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\payoff_average.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\payoff_binary_options.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\payoff_binary_put_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\payoff_black_scholes_case.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\payoff_lookback.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\random_normal.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\random_uniform.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\rendleman_bartter_build_interest_rate_tree.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\simulate_european_options_generic_routine.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\simulate_european_options_generic_routine_antithetic_variate.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\simulate_european_options_generic_routine_control_variate.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\simulate_european_options_generic_routine_price_sequence.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\simulate_european_options_generic_routine_price_sequence_control_variate.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\simulate_lognormal_variable.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\simulate_lognormally_distributed_sequence.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\simulated_call_euro.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\simulated_delta_call.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\simulated_delta_put.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\simulated_put_euro.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_cir.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_cubic_spline.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_flat.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_ho_lee.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_ho_lee_build_tree.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_ho_lee_calc.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_ho_lee_price_bond_option.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_interpolated.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_nelson_siegel.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_svensson.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_vasicek.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\termstru_discfact_cir.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\termstru_discfact_cubic_spline.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\termstru_discfact_vasicek.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\termstru_transforms.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\termstru_yield_interpolated.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\termstru_yield_nels_sie.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\termstru_yield_svensson.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\warrant_price_black_scholes.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+    <ClCompile Include="finance\all_cc_progs\warrant_price_black_scholes_dividends.cc">
+      <Filter>Source Files\finance</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

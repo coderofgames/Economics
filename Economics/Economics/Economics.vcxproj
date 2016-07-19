@@ -1,0 +1,246 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{9B3CA1C6-2148-4D39-A7D3-F3200B9D9110}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Economics</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="finance\all_cc_progs\fin_recipes.h" />
+    <ClInclude Include="finance\all_cc_progs\normdist.h" />
+    <ClInclude Include="finance\all_cc_progs\term_structure_class.h" />
+    <ClInclude Include="finance\all_cc_progs\term_structure_class_flat.h" />
+    <ClInclude Include="finance\all_cc_progs\term_structure_class_interpolated.h" />
+    <ClInclude Include="finance\all_cc_progs\term_structure_class_svensson.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Economics.cpp" />
+    <ClCompile Include="finance\all_cc_progs\anal_price_am_call_div.cc" />
+    <ClCompile Include="finance\all_cc_progs\approx_am_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\approx_am_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\approx_am_put_geske_johnson.cc" />
+    <ClCompile Include="finance\all_cc_progs\approx_am_put_johnson.cc" />
+    <ClCompile Include="finance\all_cc_progs\bermudan_call_option.cc" />
+    <ClCompile Include="finance\all_cc_progs\bermudan_put_option.cc" />
+    <ClCompile Include="finance\all_cc_progs\binomial_generic.cc" />
+    <ClCompile Include="finance\all_cc_progs\binomial_generic_delta.cc" />
+    <ClCompile Include="finance\all_cc_progs\binomial_tree_ud.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_call_payout.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_delta_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_delta_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_div_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_div_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_partials_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_partials_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_prop_div_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_prop_div_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_am_put_payout.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_eur_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_eur_call_ud.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_eur_call_ud_one.cc" />
+    <ClCompile Include="finance\all_cc_progs\bin_eur_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_call_div.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_delta_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_delta_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_imp_vol_bisect.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_imp_vol_newt.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_partials_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_partials_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_price_payout_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_price_payout_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\black_scholes_put_div.cc" />
+    <ClCompile Include="finance\all_cc_progs\bondopt_call_binom_am.cc" />
+    <ClCompile Include="finance\all_cc_progs\bondopt_call_bs.cc" />
+    <ClCompile Include="finance\all_cc_progs\bondopt_call_coupon_bs.cc" />
+    <ClCompile Include="finance\all_cc_progs\bondopt_call_rend_bart.cc" />
+    <ClCompile Include="finance\all_cc_progs\bondopt_call_vasicek.cc" />
+    <ClCompile Include="finance\all_cc_progs\bondopt_put_binom_am.cc" />
+    <ClCompile Include="finance\all_cc_progs\bondopt_put_bs.cc" />
+    <ClCompile Include="finance\all_cc_progs\bondopt_put_coupon_bs.cc" />
+    <ClCompile Include="finance\all_cc_progs\bondopt_put_vasicek.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_convexity.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_convexity_discrete.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_convexity_termstru.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_duration.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_duration_discrete.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_duration_macaulay.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_duration_macaulay_discrete.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_duration_modified.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_duration_termstru.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_price.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_price_both.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_price_discrete.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_price_termstru.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_yield.cc" />
+    <ClCompile Include="finance\all_cc_progs\bonds_yield_discrete.cc" />
+    <ClCompile Include="finance\all_cc_progs\cflow_irr.cc" />
+    <ClCompile Include="finance\all_cc_progs\cflow_irr_discrete.cc" />
+    <ClCompile Include="finance\all_cc_progs\cflow_irr_test_unique.cc" />
+    <ClCompile Include="finance\all_cc_progs\cflow_pv.cc" />
+    <ClCompile Include="finance\all_cc_progs\cflow_pv_discrete.cc" />
+    <ClCompile Include="finance\all_cc_progs\cum_normal.cc" />
+    <ClCompile Include="finance\all_cc_progs\cum_normal_bivariate.cc" />
+    <ClCompile Include="finance\all_cc_progs\currency_opt_bin_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\currency_opt_bin_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\currency_opt_euro_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\currency_opt_euro_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\exotics_asian_price_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\exotics_lookback_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\exotics_lookback_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\findiff_exp_am_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\findiff_exp_am_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\findiff_exp_eur_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\findiff_exp_eur_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\findiff_imp_am_call_newmat.cc" />
+    <ClCompile Include="finance\all_cc_progs\findiff_imp_am_put_itpp.cc" />
+    <ClCompile Include="finance\all_cc_progs\findiff_imp_am_put_newmat.cc" />
+    <ClCompile Include="finance\all_cc_progs\findiff_imp_eur_call_newmat.cc" />
+    <ClCompile Include="finance\all_cc_progs\findiff_imp_eur_put_newmat.cc" />
+    <ClCompile Include="finance\all_cc_progs\futures_opt_call_bin.cc" />
+    <ClCompile Include="finance\all_cc_progs\futures_opt_call_black.cc" />
+    <ClCompile Include="finance\all_cc_progs\futures_opt_put_bin.cc" />
+    <ClCompile Include="finance\all_cc_progs\futures_opt_put_black.cc" />
+    <ClCompile Include="finance\all_cc_progs\futures_price.cc" />
+    <ClCompile Include="finance\all_cc_progs\heston_price.cc" />
+    <ClCompile Include="finance\all_cc_progs\interest_rate_trees_gbm_build.cc" />
+    <ClCompile Include="finance\all_cc_progs\interest_rate_trees_gbm_calculate_spot_rate.cc" />
+    <ClCompile Include="finance\all_cc_progs\interest_rate_trees_gbm_value_of_callable.cc" />
+    <ClCompile Include="finance\all_cc_progs\interest_rate_trees_gbm_value_of_cashflows.cc" />
+    <ClCompile Include="finance\all_cc_progs\merton_jump_diff_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\mv_calc_itpp.cc" />
+    <ClCompile Include="finance\all_cc_progs\mv_calc_newmat.cc" />
+    <ClCompile Include="finance\all_cc_progs\mv_calc_port_unconstrained_itpp.cc" />
+    <ClCompile Include="finance\all_cc_progs\mv_calc_port_unconstrained_newmat.cc" />
+    <ClCompile Include="finance\all_cc_progs\N3.cc" />
+    <ClCompile Include="finance\all_cc_progs\normdist.cc" />
+    <ClCompile Include="finance\all_cc_progs\option_price_american_perpetual_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\option_price_american_perpetual_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\opt_price_trinom_am_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\opt_price_trinom_am_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\payoff_average.cc" />
+    <ClCompile Include="finance\all_cc_progs\payoff_binary_options.cc" />
+    <ClCompile Include="finance\all_cc_progs\payoff_binary_put_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\payoff_black_scholes_case.cc" />
+    <ClCompile Include="finance\all_cc_progs\payoff_lookback.cc" />
+    <ClCompile Include="finance\all_cc_progs\random_normal.cc" />
+    <ClCompile Include="finance\all_cc_progs\random_uniform.cc" />
+    <ClCompile Include="finance\all_cc_progs\rendleman_bartter_build_interest_rate_tree.cc" />
+    <ClCompile Include="finance\all_cc_progs\simulated_call_euro.cc" />
+    <ClCompile Include="finance\all_cc_progs\simulated_delta_call.cc" />
+    <ClCompile Include="finance\all_cc_progs\simulated_delta_put.cc" />
+    <ClCompile Include="finance\all_cc_progs\simulated_put_euro.cc" />
+    <ClCompile Include="finance\all_cc_progs\simulate_european_options_generic_routine.cc" />
+    <ClCompile Include="finance\all_cc_progs\simulate_european_options_generic_routine_antithetic_variate.cc" />
+    <ClCompile Include="finance\all_cc_progs\simulate_european_options_generic_routine_control_variate.cc" />
+    <ClCompile Include="finance\all_cc_progs\simulate_european_options_generic_routine_price_sequence.cc" />
+    <ClCompile Include="finance\all_cc_progs\simulate_european_options_generic_routine_price_sequence_control_variate.cc" />
+    <ClCompile Include="finance\all_cc_progs\simulate_lognormally_distributed_sequence.cc" />
+    <ClCompile Include="finance\all_cc_progs\simulate_lognormal_variable.cc" />
+    <ClCompile Include="finance\all_cc_progs\termstru_discfact_cir.cc" />
+    <ClCompile Include="finance\all_cc_progs\termstru_discfact_cubic_spline.cc" />
+    <ClCompile Include="finance\all_cc_progs\termstru_discfact_vasicek.cc" />
+    <ClCompile Include="finance\all_cc_progs\termstru_transforms.cc" />
+    <ClCompile Include="finance\all_cc_progs\termstru_yield_interpolated.cc" />
+    <ClCompile Include="finance\all_cc_progs\termstru_yield_nels_sie.cc" />
+    <ClCompile Include="finance\all_cc_progs\termstru_yield_svensson.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_cir.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_cubic_spline.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_flat.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_ho_lee.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_ho_lee_build_tree.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_ho_lee_calc.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_ho_lee_price_bond_option.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_interpolated.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_nelson_siegel.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_svensson.cc" />
+    <ClCompile Include="finance\all_cc_progs\term_structure_class_vasicek.cc" />
+    <ClCompile Include="finance\all_cc_progs\warrant_price_black_scholes.cc" />
+    <ClCompile Include="finance\all_cc_progs\warrant_price_black_scholes_dividends.cc" />
+    <ClCompile Include="stdafx.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
